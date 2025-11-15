@@ -1,0 +1,15 @@
+[Unit]
+Description=Python Server Monitoring Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/server_monitor.py
+Restart=always
+User=monitor
+
+[Install]
+WantedBy=multi-user.target
+
+#Create /etc/systemd/system/server-monitor.service
+#sudo systemctl enable server-monitor
+#sudo systemctl start server-monitor

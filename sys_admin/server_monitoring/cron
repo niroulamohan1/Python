@@ -1,0 +1,1 @@
+* * * * * /usr/bin/python3 /opt/server_monitor.py >> /var/log/server_monitor.log 2>&1

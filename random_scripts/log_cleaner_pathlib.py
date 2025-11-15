@@ -28,7 +28,7 @@ def cleanup_logs():
             if file_path.stat().st_mtime < cutoff:
                 try:
                     file_path.unlink()
-                    print("🗑️ Deleted:", file_path)
+                    print("Deleted:", file_path)
                     deleted += 1
                 except Exception as e:
                     print("Error deleting", file_path, ":", e)
